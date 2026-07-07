@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FreshnessAI</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_scan">Scan</string>
+    <string name="nav_history">History</string>
+
+    <!-- Home Screen -->
+    <string name="home_greeting">Hello there 👋</string>
+    <string name="home_subtitle">Check your food\'s freshness in seconds</string>
+    <string name="home_scan_button">Scan Now</string>
+    <string name="home_recent_scans">Recent Scans</string>
+    <string name="home_no_scans">No scans yet. Tap the button below to get started!</string>
+    <string name="home_how_it_works">How It Works</string>
+    <string name="home_step_1">Point your camera at the QR sensor label</string>
+    <string name="home_step_2">Tap capture to read the QR code &amp; photograph the food</string>
+    <string name="home_step_3">AI instantly analyzes freshness &amp; gives recommendations</string>
+
+    <!-- Scan Screen -->
+    <string name="scan_title">Evaluate Sensor</string>
+    <string name="scan_instruction">Frame the QR code and the food item</string>
+    <string name="scan_align_hint">Tap the capture button when both are visible</string>
+    <string name="scan_processing">AI is analyzing color &amp; data…</string>
+    <string name="scan_permission_required">Camera permission is required to scan</string>
+    <string name="scan_permission_denied">Camera access denied. Please enable it in Settings.</string>
+    <string name="scan_grant_permission">Grant Permission</string>
+    <string name="scan_invalid_qr">Not a valid FreshnessAI QR format</string>
+    <string name="scan_error">Could not analyze the image. Please try again.</string>
+    <string name="scan_flash_on">Flash On</string>
+    <string name="scan_flash_off">Flash Off</string>
+
+    <!-- Result Screen -->
+    <string name="result_title">Freshness Report</string>
+    <string name="result_score_label">Freshness Score</string>
+    <string name="result_ph_label">Estimated pH</string>
+    <string name="result_detected_color">Detected Color</string>
+    <string name="result_food_details">Food Details</string>
+    <string name="result_product">Product</string>
+    <string name="result_category">Category</string>
+    <string name="result_manufactured">Manufactured</string>
+    <string name="result_expires">Expires</string>
+    <string name="result_batch">Batch</string>
+    <string name="result_remaining_time">Estimated Remaining Life</string>
+    <string name="result_edible">Safe to Eat?</string>
+    <string name="result_confidence">Analysis Confidence</string>
+    <string name="result_recommendations">Recommendations</string>
+    <string name="result_safety_notes">Safety Notes</string>
+    <string name="result_scan_again">Scan Another</string>
+    <string name="result_done">Done</string>
+    <string name="result_hours_left">%d hours remaining</string>
+    <string name="result_days_left">%d days remaining</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Scan History</string>
+    <string name="history_empty">No scans recorded yet</string>
+    <string name="history_empty_subtitle">Your scan history will appear here</string>
+    <string name="history_clear_all">Clear All</string>
+    <string name="history_clear_confirm">Clear all scan history?</string>
+    <string name="history_cleared">History cleared</string>
+
+    <!-- Detail Screen -->
+    <string name="detail_title">Scan Details</string>
+    <string name="detail_scanned_on">Scanned on %s</string>
+
+    <!-- General -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="error">Error</string>
+    <string name="retry">Retry</string>
+</resources>

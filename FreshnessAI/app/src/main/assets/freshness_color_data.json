@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "description": "FreshnessAI Color-to-pH mapping data. Edit hex codes and HSV values to recalibrate the sensor.",
+  "color_stops": [
+    {
+      "ph_min": 1.0,
+      "ph_max": 2.0,
+      "hex": "#E60045",
+      "hue": 342.0,
+      "saturation": 100.0,
+      "value": 90.0,
+      "label": "Highly Fresh / Acidic",
+      "description": "Vibrant red — product is highly acidic and very fresh (e.g., citrus, yogurt)",
+      "freshness_score": 95,
+      "edible": true
+    },
+    {
+      "ph_min": 3.0,
+      "ph_max": 5.0,
+      "hex": "#9B4F96",
+      "hue": 304.0,
+      "saturation": 49.0,
+      "value": 61.0,
+      "label": "Fresh / Mildly Acidic",
+      "description": "Soft pink-mauve — mildly acidic, typical of fresh dairy (e.g., fresh milk, cheese)",
+      "freshness_score": 85,
+      "edible": true
+    },
+    {
+      "ph_min": 6.0,
+      "ph_max": 7.0,
+      "hex": "#5F2D79",
+      "hue": 276.0,
+      "saturation": 63.0,
+      "value": 47.0,
+      "label": "Fresh / Neutral Baseline",
+      "description": "Deep purple-violet — neutral pH baseline, freshly packaged (e.g., water, pure juice)",
+      "freshness_score": 75,
+      "edible": true
+    },
+    {
+      "ph_min": 8.0,
+      "ph_max": 9.0,
+      "hex": "#2A6BB2",
+      "hue": 210.0,
+      "saturation": 76.0,
+      "value": 70.0,
+      "label": "Early Spoilage",
+      "description": "Ocean blue-teal — initial bacterial protein breakdown detected",
+      "freshness_score": 45,
+      "edible": false
+    },
+    {
+      "ph_min": 10.0,
+      "ph_max": 12.0,
+      "hex": "#259646",
+      "hue": 145.0,
+      "saturation": 75.0,
+      "value": 59.0,
+      "label": "Advanced Spoilage",
+      "description": "Emerald green — high concentration of ammonia gas from decomposition",
+      "freshness_score": 20,
+      "edible": false
+    },
+    {
+      "ph_min": 13.0,
+      "ph_max": 14.0,
+      "hex": "#D1D425",
+      "hue": 61.0,
+      "saturation": 82.0,
+      "value": 83.0,
+      "label": "Extreme Decomposition",
+      "description": "Greenish yellow — complete decay, high toxicity, do not consume",
+      "freshness_score": 5,
+      "edible": false
+    }
+  ],
+  "food_categories": {
+    "dairy": {
+      "name": "Dairy Products",
+      "examples": ["milk", "cheese", "yogurt", "butter", "cream"],
+      "typical_fresh_ph": 4.5,
+      "spoilage_threshold_ph": 8.0,
+      "spoilage_rate": "fast",
+      "default_shelf_life_hours": 168,
+      "safety_notes": "Dairy products spoil quickly. Discard if pH rises above 8 or if odor is present."
+    },
+    "meat": {
+      "name": "Meat & Poultry",
+      "examples": ["chicken", "beef", "pork", "fish", "lamb", "turkey"],
+      "typical_fresh_ph": 5.5,
+      "spoilage_threshold_ph": 7.5,
+      "spoilage_rate": "very_fast",
+      "default_shelf_life_hours": 72,
+      "safety_notes": "Meat is highly perishable. Any sign of spoilage means immediate discard."
+    },
+    "fruit": {
+      "name": "Fruits",
+      "examples": ["apple", "banana", "orange", "strawberry", "mango", "grape"],
+      "typical_fresh_ph": 3.5,
+      "spoilage_threshold_ph": 7.0,
+      "spoilage_rate": "moderate",
+      "default_shelf_life_hours": 240,
+      "safety_notes": "Fruits gradually lose acidity as they ripen and decay."
+    },
+    "vegetable": {
+      "name": "Vegetables",
+      "examples": ["lettuce", "tomato", "carrot", "spinach", "broccoli", "potato"],
+      "typical_fresh_ph": 6.0,
+      "spoilage_threshold_ph": 8.5,
+      "spoilage_rate": "moderate",
+      "default_shelf_life_hours": 168,
+      "safety_notes": "Watch for wilting, sliminess, or off-odors alongside pH changes."
+    },
+    "seafood": {
+      "name": "Seafood",
+      "examples": ["shrimp", "salmon", "tuna", "crab", "lobster", "squid"],
+      "typical_fresh_ph": 6.0,
+      "spoilage_threshold_ph": 7.0,
+      "spoilage_rate": "very_fast",
+      "default_shelf_life_hours": 48,
+      "safety_notes": "Seafood is extremely perishable. Ammonia smell indicates advanced spoilage."
+    },
+    "bakery": {
+      "name": "Bakery & Bread",
+      "examples": ["bread", "cake", "pastry", "muffin", "croissant"],
+      "typical_fresh_ph": 5.5,
+      "spoilage_threshold_ph": 8.0,
+      "spoilage_rate": "slow",
+      "default_shelf_life_hours": 120,
+      "safety_notes": "Mold growth is the primary spoilage concern for baked goods."
+    },
+    "beverage": {
+      "name": "Beverages",
+      "examples": ["juice", "smoothie", "milk_drink", "kombucha"],
+      "typical_fresh_ph": 3.5,
+      "spoilage_threshold_ph": 7.0,
+      "spoilage_rate": "moderate",
+      "default_shelf_life_hours": 96,
+      "safety_notes": "Fermentation or off-flavors indicate spoilage in beverages."
+    },
+    "other": {
+      "name": "Other / General",
+      "examples": ["prepared_meal", "sauce", "condiment", "snack"],
+      "typical_fresh_ph": 5.0,
+      "spoilage_threshold_ph": 8.0,
+      "spoilage_rate": "moderate",
+      "default_shelf_life_hours": 120,
+      "safety_notes": "Check product-specific guidelines for freshness."
+    }
+  },
+  "interpolation_config": {
+    "primary_weight_hue": 0.7,
+    "secondary_weight_saturation": 0.2,
+    "tertiary_weight_value": 0.1,
+    "min_confidence_threshold": 0.4,
+    "sensor_circle_radius_ratio": 0.12,
+    "calibration_sample_count": 50
+  }
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Palette (Warm, Earthy) -->
+    <color name="primary">#C4764E</color>
+    <color name="primary_dark">#9B5A3C</color>
+    <color name="primary_light">#E8A87C</color>
+    <color name="primary_container">#FFDBC8</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_primary_container">#3D1E08</color>
+
+    <!-- Accent -->
+    <color name="accent">#7A9B76</color>
+    <color name="accent_light">#A8C5A4</color>
+
+    <!-- Background & Surface -->
+    <color name="background">#FFF8F0</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="card_bg">#FFFDFB</color>
+    <color name="card_border">#F5E6D8</color>
+    <color name="surface_variant">#FFF2E8</color>
+
+    <!-- Text -->
+    <color name="text_primary">#3D2B1F</color>
+    <color name="text_secondary">#6B5B4F</color>
+    <color name="text_hint">#A89888</color>
+    <color name="text_on_dark">#FFFFFF</color>
+
+    <!-- Divider & Border -->
+    <color name="divider">#F0E8E0</color>
+    <color name="icon_tint">#8B6F47</color>
+    <color name="ripple">#1AC4764E</color>
+
+    <!-- Bottom Nav -->
+    <color name="nav_indicator">#FFDBC8</color>
+    <color name="nav_unselected">#A89888</color>
+
+    <!-- Freshness Status Colors -->
+    <color name="freshness_excellent">#4CAF50</color>
+    <color name="freshness_good">#8BC34A</color>
+    <color name="freshness_fair">#FFC107</color>
+    <color name="freshness_caution">#FF9800</color>
+    <color name="freshness_spoiled">#F44336</color>
+    <color name="freshness_dangerous">#B71C1C</color>
+
+    <!-- Sensor Reference Colors (pH scale) -->
+    <color name="sensor_ph_1_2">#E60045</color>
+    <color name="sensor_ph_3_5">#9B4F96</color>
+    <color name="sensor_ph_6_7">#5F2D79</color>
+    <color name="sensor_ph_8_9">#2A6BB2</color>
+    <color name="sensor_ph_10_12">#259646</color>
+    <color name="sensor_ph_13_14">#D1D425</color>
+
+    <!-- Scanner Overlay -->
+    <color name="scanner_overlay">#99000000</color>
+    <color name="scanner_frame">#C4764E</color>
+
+    <!-- Status Bar -->
+    <color name="status_bar">#F5E6D8</color>
+
+    <!-- Launcher -->
+    <color name="ic_launcher_background">#C4764E</color>
+</resources>
